@@ -1,3 +1,5 @@
+# check50 ejbray123/problems/main/fizz_buzz --local
+
 check50:
   checks:
     exists:
