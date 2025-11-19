@@ -1,0 +1,18 @@
+check50:
+  checks:
+    exists:
+      - run: ls
+        stdout: fizz_buzz.py
+        exit: 0
+    valid input:
+      - run: python3 fizz_buzz.py
+        stdin: 10
+        stdout: 1 2 fizz 4 buzz fizz 7 8 fizz buzz
+        exit: 0
+    invalid input:
+      - run: python3 fizz_buzz.py
+        stdin:
+          - cat
+          - 5
+        exit: 0
+    
