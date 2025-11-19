@@ -1,0 +1,15 @@
+check50:
+  checks:
+    exists:
+      - run: ls
+        stdout: hello.py
+        exit: 0
+    hello world:
+      - run: python3 hello.py
+        stdout: Hello, world!
+        exit: 0
+    hello name:
+      - run: python3 hello.py Eric
+        stdout: Hello, Eric!
+        exit: 0
+    
