@@ -3,8 +3,7 @@ check50:
     exists:
       - run: ls
         stdout: 
-          - fizz_buzz.py
-          - test_fizz_buzz.py
+          - fizz_buzz.py  test_fizz_buzz.py
     valid input:
       - run: python3 fizz_buzz.py
         stdin: 10
