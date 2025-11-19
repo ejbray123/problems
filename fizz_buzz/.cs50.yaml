@@ -1,8 +1,10 @@
 check50:
-  files:
-    - fizz_buzz.py
-    - test_fizz_buzz.py
   checks:
+    exists:
+      - run: ls
+        stdout: 
+          - fizz_buzz.py
+          - test_fizz_buzz.py
     valid input:
       - run: python3 fizz_buzz.py
         stdin: 10
