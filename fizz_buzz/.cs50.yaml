@@ -15,4 +15,7 @@ check50:
           - cat
           - 5
         exit: 0
-    
+    pytests:
+      - run: pytest
+        stdout: /passed/
+        exit: 0
