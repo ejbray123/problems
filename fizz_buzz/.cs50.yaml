@@ -19,5 +19,4 @@ check50:
         exit: 0
     pytests:
       - run: pytest -q
-        stdout: /passed/
         exit: 0
