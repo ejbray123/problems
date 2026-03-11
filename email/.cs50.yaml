@@ -1,0 +1,16 @@
+check50:
+  checks:
+    exists:
+      - run: ls
+        stdout: 
+          - email.py
+    valid input:
+      - run: python3 fizz_buzz.py
+        stdin: eric.bray@gow.org
+        stdout: Valid
+        exit: 0
+    invalid input:
+      - run: python3 fizz_buzz.py
+        stdin: ericbray@buffalo.edu
+        stdout: Invalid
+        exit: 0
