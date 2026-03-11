@@ -5,12 +5,12 @@ check50:
         stdout: 
           - email.py
     valid input:
-      - run: python3 fizz_buzz.py
+      - run: python3 email.py
         stdin: eric.bray@gow.org
         stdout: Valid
         exit: 0
     invalid input:
-      - run: python3 fizz_buzz.py
+      - run: python3 email.py
         stdin: ericbray@buffalo.edu
         stdout: Invalid
         exit: 0
